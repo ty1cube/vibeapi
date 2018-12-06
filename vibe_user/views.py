@@ -101,9 +101,9 @@ class CreateArtistMemberView(views.APIView):
         name = request.data.get("name")
 
         try:
-            Member.objects.get(name=name, space_type="P")
+            Member.objects.get(name=name, member_type="A")
             return Response(
-                    {"errors": "personal space already exist"}, 
+                    {"errors": "Artist name already exist"}, 
                     status=status.HTTP_400_BAD_REQUEST
                 )
         except Member.DoesNotExist:
@@ -169,18 +169,18 @@ class CreateRecordMemberView(views.APIView):
         signup_serializer = SignupSerializer(data=data)
         signup_serializer.is_valid(raise_exception=True)
 
-        # name = request.data.get("name")
+        name = request.data.get("name")
         # org_name = request.data.get("org_name")
         # org_password = request.data.get("org_password")
 
-        # try:
-        #     Space.objects.get(name=name, space_type="O")
-        #     return Response(
-        #             {"errors": "organisation space already exist"}, 
-        #             status=status.HTTP_400_BAD_REQUEST
-        #         )
-        # except Space.DoesNotExist:
-        #     pass
+        try:
+            Member.objects.get(name=name, space_type="R")
+            return Response(
+                    {"errors": "Record Manager name already exist"}, 
+                    status=status.HTTP_400_BAD_REQUEST
+                )
+        except Member.DoesNotExist:
+            pass
 
 
         # organisation = None
@@ -246,128 +246,128 @@ class CreateRecordMemberView(views.APIView):
 
 
    
-class JoinArtistMemberView(views.APIView):
-    permission_classes = (permissions.AllowAny,)
+# class JoinArtistMemberView(views.APIView):
+#     permission_classes = (permissions.AllowAny,)
     
-    def post(self, request, name, *args, **kwargs):
+#     def post(self, request, name, *args, **kwargs):
 
-        data={}
+#         data={}
 
-        data.update({"member_type": "A"})
-        data.update(request.data)
+#         data.update({"member_type": "A"})
+#         data.update(request.data)
 
-        signup_serializer = SignupSerializer(data=data)
-        signup_serializer.is_valid(raise_exception=True)
+#         signup_serializer = SignupSerializer(data=data)
+#         signup_serializer.is_valid(raise_exception=True)
 
-        member = None
+#         member = None
 
-        try:
-            member = member.objects.get(
-                    name=name, member_type="A"
-                )
-        except member.DoesNotExist:
-            return Response(
-                    {"errors": "personal space does not exist"}, 
-                    status=status.HTTP_404_NOT_FOUND
-                )
+#         try:
+#             member = member.objects.get(
+#                     name=name, member_type="A"
+#                 )
+#         except member.DoesNotExist:
+#             return Response(
+#                     {"errors": "personal space does not exist"}, 
+#                     status=status.HTTP_404_NOT_FOUND
+#                 )
 
-        signup_serializer.save()
-
-
-        data.update({"user": signup_serializer.data.get("id")})
-        data.update({"member": member.name})
-
-        assignment_serializer = \
-                VibespotMemberSerializer(data=data)
-
-        if not assignment_serializer.is_valid():
-            User.objects.get(email=request.data.get("email")).delete()
-            return Response(
-                    assignment_serializer.errors, 
-                    status=status.HTTP_400_BAD_REQUEST
-                    )
-
-        assignment_serializer.save()
+#         signup_serializer.save()
 
 
+#         data.update({"user": signup_serializer.data.get("id")})
+#         data.update({"member": member.name})
 
-        try:
-            signup_successful_email(request, User.objects.get(email=request.data.get("email")))
-            ctxt = {
-                'admin_username': member.creator.username,
-                'member_username': request.data.get("username") 
-            }
-            send_notifation_email("join_space_email", ctxt, member.creator.email)
-        except Exception as e:
-            User.objects.get(email=request.data.get("email")).delete()
-            return Response({
-                'message': "Registration failed. Try again",
-                }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+#         assignment_serializer = \
+#                 VibespotMemberSerializer(data=data)
 
-        return Response({
-            'message': "Sign up successful. Check your inbox for verification link",
-            }, status=status.HTTP_201_CREATED)
+#         if not assignment_serializer.is_valid():
+#             User.objects.get(email=request.data.get("email")).delete()
+#             return Response(
+#                     assignment_serializer.errors, 
+#                     status=status.HTTP_400_BAD_REQUEST
+#                     )
+
+#         assignment_serializer.save()
 
 
 
-class JoinRecordMemberView(views.APIView):
-    permission_classes = (permissions.AllowAny,)
+#         try:
+#             signup_successful_email(request, User.objects.get(email=request.data.get("email")))
+#             ctxt = {
+#                 'admin_username': member.creator.username,
+#                 'member_username': request.data.get("username") 
+#             }
+#             send_notifation_email("join_space_email", ctxt, member.creator.email)
+#         except Exception as e:
+#             User.objects.get(email=request.data.get("email")).delete()
+#             return Response({
+#                 'message': "Registration failed. Try again",
+#                 }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+#         return Response({
+#             'message': "Sign up successful. Check your inbox for verification link",
+#             }, status=status.HTTP_201_CREATED)
+
+
+
+# class JoinRecordMemberView(views.APIView):
+#     permission_classes = (permissions.AllowAny,)
     
-    def post(self, request, name, *args, **kwargs):
+#     def post(self, request, name, *args, **kwargs):
 
-        data={}
+#         data={}
 
-        data.update({"member_type": "R"})
-        data.update(request.data)
+#         data.update({"member_type": "R"})
+#         data.update(request.data)
 
-        signup_serializer = SignupSerializer(data=data)
-        signup_serializer.is_valid(raise_exception=True)
+#         signup_serializer = SignupSerializer(data=data)
+#         signup_serializer.is_valid(raise_exception=True)
 
-        member = None
+#         member = None
 
-        try:
-            member = member.objects.get(name=name, member_type="R")
-        except member.DoesNotExist:
-            return Response(
-                    {"errors": "organisation space does not exist"}, 
-                    status=status.HTTP_404_NOT_FOUND
-                )
+#         try:
+#             member = member.objects.get(name=name, member_type="R")
+#         except member.DoesNotExist:
+#             return Response(
+#                     {"errors": "organisation space does not exist"}, 
+#                     status=status.HTTP_404_NOT_FOUND
+#                 )
 
-        signup_serializer.save()
+#         signup_serializer.save()
 
 
 
-        # data.update({"user": signup_serializer.data.get("id")})
-        # data.update({"space": member.name})
+#         # data.update({"user": signup_serializer.data.get("id")})
+#         # data.update({"space": member.name})
 
-        # assignment_serializer = \
-        #         VibespotMemberSerializer(data=data)
+#         # assignment_serializer = \
+#         #         VibespotMemberSerializer(data=data)
 
-        # if not assignment_serializer.is_valid():
-        #     User.objects.get(email=request.data.get("email")).delete()
-        #     return Response(
-        #             assignment_serializer.errors, 
-        #             status=status.HTTP_400_BAD_REQUEST
-        #         )
+#         # if not assignment_serializer.is_valid():
+#         #     User.objects.get(email=request.data.get("email")).delete()
+#         #     return Response(
+#         #             assignment_serializer.errors, 
+#         #             status=status.HTTP_400_BAD_REQUEST
+#         #         )
 
-        # assignment_serializer.save()
+#         # assignment_serializer.save()
 
-        try:
-            signup_successful_email(request, User.objects.get(email=request.data.get("email")))
-            ctxt = {
-                'admin_username': member.creator.username,
-                'member_username': request.data.get("username") 
-            }
-            send_notifation_email("join_space_email", ctxt, member.creator.email)
-        except Exception:
-            User.objects.get(email=request.data.get("email")).delete()
-            return Response({
-                'message': "Registration failed. Try again",
-                }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+#         try:
+#             signup_successful_email(request, User.objects.get(email=request.data.get("email")))
+#             ctxt = {
+#                 'admin_username': member.creator.username,
+#                 'member_username': request.data.get("username") 
+#             }
+#             send_notifation_email("join_space_email", ctxt, member.creator.email)
+#         except Exception:
+#             User.objects.get(email=request.data.get("email")).delete()
+#             return Response({
+#                 'message': "Registration failed. Try again",
+#                 }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
-        return Response({
-            'message': "Sign up successful. Check your inbox for verification link",
-            }, status=status.HTTP_201_CREATED)
+#         return Response({
+#             'message': "Sign up successful. Check your inbox for verification link",
+#             }, status=status.HTTP_201_CREATED)
 
 
 class UserDefaultMemberView(generics.RetrieveAPIView):

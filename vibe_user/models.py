@@ -23,16 +23,6 @@ import uuid
 
 # User = settings.AUTH_USER_MODEL
 
-# class TimestampedModel(models.Model):
-
-#     created_on = models.DateTimeField(auto_now_add=True)
-#     updated_on = models.DateTimeField(auto_now=True)
-
-#     class Meta:
-#         abstract = True
-#         ordering = ['-created_on',"-updated_on"]
-
-
 
 
 class UserManager(BaseUserManager):
@@ -84,16 +74,16 @@ class User(AbstractBaseUser, PermissionsMixin):
     class Meta:
         db_table = 'user'
 
-    def create_user(self, username, email,  member_type=None, password=None):
-        self.objects.create_user(
-                username=username, 
-                email=email,
-                 member_type=member_type,
+    # def create_user(self, username, email,  member_type=None, password=None):
+    #     self.objects.create_user(
+    #             username=username, 
+    #             email=email,
+    #              member_type=member_type,
                
-            )
-        user.set_password(password)
-        user.save()
-        return user
+    #         )
+    #     user.set_password(password)
+    #     user.save()
+    #     return user
 
     def __str__(self):
         """
