@@ -17,13 +17,12 @@ class Command(BaseCommand):
                 data = csv.reader(data_file)
                 for data_object in data:
                     id = data_object[0]
-                    long_description_eng = data_object[1]
-                    long_description_deu = data_object[2]
+                    long_description = data_object[1]
 
                     try:
                         object, created = model.objects.get_or_create(
                                 id=id,
-                                
+                                long_description=long_description
                             )
                         if created:
                             object.save()
