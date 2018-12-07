@@ -151,7 +151,7 @@ class UserDefaultMember(models.Model):
 class VibespotMember(models.Model):
     id              = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False) 
     user            = models.ForeignKey(User, on_delete=models.CASCADE)
-    space           = models.ForeignKey(Member,on_delete=models.CASCADE)
+    member           = models.ForeignKey(Member,on_delete=models.CASCADE)
     member_type     = models.ForeignKey("vibe_user.MemberType", on_delete=models.CASCADE)
     is_member_admin  = models.BooleanField(default=False)
     is_approved     = models.BooleanField(default=False)
