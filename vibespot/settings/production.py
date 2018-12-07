@@ -145,17 +145,28 @@ WSGI_APPLICATION = 'vibespot.wsgi.application'
 # }
 
 
-DATABASES = {
+# DATABASES = {
 
-       'default': {    
-           'ENGINE': 'django.db.backends.postgresql_psycopg2',
-           'NAME': 'admincatdb',
-           'USER': 'vibespot',
-           'PASSWORD': 'Adm1nC@t',
-           'PORT': '',
-           'HOST':'localhost',
-           }
-       }
+#        'default': {    
+#            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#            'NAME': 'admincatdb',
+#            'USER': 'vibespot',
+#            'PASSWORD': 'Adm1nC@t',
+#            'PORT': '',
+#            'HOST':'localhost',
+#            }
+#        }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'vibespotdatabase',
+        'USER': 'vibespot',
+        'PASSWORD': 'Vibespot@Intemporel2018',
+        'HOST': 'localhost',
+        'PORT': '',    
+        }
+}
 
 
 
