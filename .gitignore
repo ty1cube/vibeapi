@@ -9,6 +9,10 @@ Admincat/lib/
 Admincat/pip-selfcheck.json
 .DS_Store
 .env
+vibe/bin/
+vibe/include/
+vibe/lib/
+vibe/pip-selfcheck.json
 # C extensions
 *.so
 *.sqlite3
