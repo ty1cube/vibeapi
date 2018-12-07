@@ -31,7 +31,7 @@ SECRET_KEY = '32s-6zg^c7(#c^z&d=z*&f3366-^4wg%$s)1y2up)w253kos#c'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [ '167.99.110.73', 'localhost']
+ALLOWED_HOSTS = ['167.99.110.73', 'localhost']
 
 
 # Application definition
@@ -129,17 +129,29 @@ WSGI_APPLICATION = 'vibespot.wsgi.application'
 # }
 
 
-DATABASES = {
+# DATABASES = {
 
-       'default': {    
-           'ENGINE': 'django.db.backends.postgresql_psycopg2',
-           'NAME': 'admincatdatabase',
-           'USER': 'vibespot',
-           'PASSWORD': 'Adm1nC@t',
-           'PORT': '',
-           'HOST':'localhost',
-           }
-       }
+#        'default': {    
+#            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#            'NAME': 'admincatdatabase',
+#            'USER': 'vibespot',
+#            'PASSWORD': 'Adm1nC@t',
+#            'PORT': '',
+#            'HOST':'localhost',
+#            }
+#        }
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'vibespotdatabase',
+        'USER': 'vibespot',
+        'PASSWORD': 'Vibespot@Intemporel2018',
+        'HOST': 'localhost',
+        'PORT': '',    
+        }
+}
 
 
 
@@ -181,9 +193,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 # STATIC_ROOT = 'staticfiles'
 
-STATICFILES_DIRS = (
-    os.path.join(os.path.join(BASE_DIR, 'build'), 'static'),
-)
+# STATICFILES_DIRS = (
+#     os.path.join(os.path.join(BASE_DIR, 'build'), 'static'),
+# )
 
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+# STATIC_URL = '/static/'
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+
+STATIC_URL='/static/'
+MEDIA_ROOT=os.path.join(BASE_DIR, 'static/')
+MEDIA_URL='/media/'
+MEDIA_ROOT=os.path.join(BASE_DIR, 'media/')
