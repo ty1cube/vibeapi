@@ -169,6 +169,20 @@ class CreateRecordMemberView(views.APIView):
         except Member.DoesNotExist:
             pass
 
+        signup_serializer.save()
+
+
+        data.update({"creator": signup_serializer.data.get("id")})
+        member_serializer = MemberSerializer(data=data)
+
+        if not member_serializer.is_valid():
+            User.objects.get(email=request.data.get("email")).delete()
+            return Response(
+                    member_serializer.errors, 
+                    status=status.HTTP_400_BAD_REQUEST
+                )
+
+        member_serializer.save()
 
         try:
             # signup_successful_email(request, User.objects.get(email=request.data.get("email")))
@@ -176,7 +190,7 @@ class CreateRecordMemberView(views.APIView):
         except Exception:
             User.objects.get(email=request.data.get("email")).delete()
             return Response({
-                '}message': "Registration failed. Try again",
+                'message': "Registration failed. Try again",
                 }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
         return Response({
