@@ -123,20 +123,6 @@ class CreateArtistMemberView(views.APIView):
 
         member_serializer.save()
 
-        # data.update({"user": signup_serializer.data.get("id")})
-        # data.update({"member": member_serializer.data.get("name")})
-
-        # assignment_serializer = \
-        #         VibespotMemberSerializer(data=data)
-
-        # if not assignment_serializer.is_valid():
-        #     User.objects.get(email=request.data.get("email")).delete()
-        #     return Response(
-        #             assignment_serializer.errors, 
-        #             status=status.HTTP_400_BAD_REQUEST
-        #             )
-
-        # assignment_serializer.save()
 
         try:
             # signup_successful_email(request, User.objects.get(email=request.data.get("email")))
@@ -148,7 +134,8 @@ class CreateArtistMemberView(views.APIView):
                 }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
         return Response({
-            'message': "Sign up successful. Check your inbox for verification link",
+            'message': "Sign up successful.",
+            # 'message': "Sign up successful. Check your inbox for verification link",
             }, status=status.HTTP_201_CREATED)
 
 
@@ -174,7 +161,7 @@ class CreateRecordMemberView(views.APIView):
         # org_password = request.data.get("org_password")
 
         try:
-            Member.objects.get(name=name, space_type="R")
+            Member.objects.get(name=name, member_type="R")
             return Response(
                     {"errors": "Record Manager name already exist"}, 
                     status=status.HTTP_400_BAD_REQUEST
@@ -182,53 +169,6 @@ class CreateRecordMemberView(views.APIView):
         except Member.DoesNotExist:
             pass
 
-
-        # organisation = None
-        # try:
-        #     organisation = Organisation.objects.get(name=org_name,
-        #             org_password=org_password)
-        # except Organisation.DoesNotExist:
-        #     return Response(
-        #             {"errors": "Organisation credentials provided is invalid"}, 
-        #             status=status.HTTP_400_BAD_REQUEST
-        #         )
-
-        # data.update({"organisation": organisation.name})
-        # signup_serializer = SignupSerializer(data=data)
-        # signup_serializer.is_valid(raise_exception=True)
-        # signup_serializer.save()
-
-
-        # data.update({"creator": signup_serializer.data.get("id")})
-        # data.update({"organisation": org_name})
-
-        # space_serializer = SpaceSerializer(data=data)
-
-        # if not space_serializer.is_valid():
-        #     User.objects.get(email=request.data.get("email")).delete()
-        #     return Response(
-        #             space_serializer.errors, 
-        #             status=status.HTTP_400_BAD_REQUEST
-        #         )
-
-        # space_serializer.save()
-
-
-
-        # data.update({"user": signup_serializer.data.get("id")})
-        # data.update({"space": space_serializer.data.get("name")})
-
-        # assignment_serializer = \
-        #         SpaceMemberSerializer(data=data)
-
-        # if not assignment_serializer.is_valid():
-        #     User.objects.get(email=request.data.get("email")).delete()
-        #     return Response(
-        #             assignment_serializer.errors, 
-        #             status=status.HTTP_400_BAD_REQUEST
-        #             )
-
-        # assignment_serializer.save()
 
         try:
             # signup_successful_email(request, User.objects.get(email=request.data.get("email")))
@@ -240,7 +180,8 @@ class CreateRecordMemberView(views.APIView):
                 }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
         return Response({
-            'message': "Sign up successful. Check your inbox for verification link",
+            'message': "Sign up successful.",
+            # 'message': "Sign up successful. Check your inbox for verification link",
             }, status=status.HTTP_201_CREATED)
 
 

@@ -160,7 +160,7 @@ class VibespotMember(models.Model):
     updated_on      = models.DateTimeField(auto_now=True)
 
     # class Meta:
-    #     db_table = 'space_member'
+    #     db_table = 'vibe_member'
 
     def __str__(self):
         return self.user.username
