@@ -139,7 +139,7 @@ class CreateArtistMemberView(views.APIView):
         # assignment_serializer.save()
 
         try:
-            signup_successful_email(request, User.objects.get(email=request.data.get("email")))
+            # signup_successful_email(request, User.objects.get(email=request.data.get("email")))
             pass
         except Exception:
             User.objects.get(email=request.data.get("email")).delete()
@@ -231,7 +231,7 @@ class CreateRecordMemberView(views.APIView):
         # assignment_serializer.save()
 
         try:
-            signup_successful_email(request, User.objects.get(email=request.data.get("email")))
+            # signup_successful_email(request, User.objects.get(email=request.data.get("email")))
             pass
         except Exception:
             User.objects.get(email=request.data.get("email")).delete()
