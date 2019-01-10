@@ -26,7 +26,7 @@ load_dotenv(os.path.join(BASE_DIR, '.env'))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 from django.conf import settings
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '32s-6zg^c7(#c^z&d=z*&f3366-^4wg%$s)1y2up)w253kos#c'
+SECRET_KEY = '32s-6zg^c7(#c^z&d=z*&f3366-^4wg%$s)1y2up)w253kos#cyfherk'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True

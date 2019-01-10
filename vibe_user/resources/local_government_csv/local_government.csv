@@ -1,0 +1,774 @@
+1,AB,Aba North
+2,AB,Aba South
+3,AB,Arochukwu
+4,AB,Bende
+5,AB,Ikwuano
+6,AB,Isiala Ngwa North
+7,AB,Isiala Ngwa South
+8,AB,Isuikwuato
+9,AB,Obingwa
+10,AB,Ohafia
+11,AB,Osisioma
+12,AB,Ugwunagbo
+13,AB,Ukwa East
+14,AB,Ukwa West
+15,AB,Umuahia North
+16,AB,Umuahia South
+17,AB,Umu-Nneochi
+18,AD,Demsa
+19,AD,Fufore
+20,AD,Ganye
+21,AD,Gire 1
+22,AD,Gombi
+23,AD,Guyuk
+24,AD,Hong
+25,AD,Jada
+26,AD,Lamurde
+27,AD,Madagali
+28,AD,Maiha
+29,AD,Mayo - Belwa
+30,AD,Michika
+31,AD,Mubi North
+32,AD,Mubi South
+33,AD,Numan
+34,AD,Shelleng
+35,AD,Song
+36,AD,Toungo
+37,AD,Yola North
+38,AD,Yola South
+39,AK,Abak
+40,AK,Eastern Obolo
+41,AK,Eket
+42,AK,Esit Eket (uquo)
+43,AK,Essien Udim
+44,AK,Etim Ekpo
+45,AK,Etinan
+46,AK,Ibeno
+47,AK,Ibesikpo Asutan
+48,AK,Ibiono Ibom
+49,AK,Ika
+50,AK,Ikono
+51,AK,Ikot Abasi
+52,AK,Ikot Ekpene
+53,AK,Ini
+54,AK,Itu
+55,AK,Mbo
+56,AK,Mkpat Enin
+57,AK,Nsit Atai
+58,AK,Nsit Ibom
+59,AK,Nsit Ubium
+60,AK,Obot Akara
+61,AK,Okobo
+62,AK,Onna
+63,AK,Oron
+64,AK,Oruk Anam
+65,AK,Udung Uko
+66,AK,Ukanafun
+67,AK,Uruan
+68,AK,Urue Offong/oruko
+69,AK,Uyo
+70,AN,Aguata
+71,AN,Ayamelum
+72,AN,Anambra East
+73,AN,Anambra West
+74,AN,Anaocha
+75,AN,Awka North
+76,AN,Awka South
+77,AN,Dunukofia
+78,AN,Ekwusigo
+79,AN,Idemili North
+80,AN,Idemili-south
+81,AN,Ihala
+82,AN,Njikoka
+83,AN,Nnewi North
+84,AN,Nnewi South
+85,AN,Ogbaru
+86,AN,Onitsha-north
+87,AN,Onitsha -south
+88,AN,Orumba North
+89,AN,Orumba South
+90,AN,Oyi
+91,BA,Alkaleri
+92,BA,Bauchi
+93,BA,Bogoro
+94,BA,Dambam
+95,BA,Darazo
+96,BA,Dass
+97,BA,Gamawa
+98,BA,Ganjuwa
+99,BA,Giade
+100,BA,Itas/gadau
+101,BA,JAMA'ARE
+102,BA,Katagum
+103,BA,Kirfi
+104,BA,Misau
+105,BA,Ningi
+106,BA,Shira
+107,BA,Tafawa Balewa
+108,BA,Toro
+109,BA,Warji
+110,BA,Zaki
+111,BY,Brass
+112,BY,Ekeremor
+113,BY,Kolokuma/opokuma
+114,BY,Nembe
+115,BY,Ogbia
+116,BY,Sagbama
+117,BY,Southern Ijaw
+118,BY,Yenagoa
+119,BN,Ado
+120,BN,Agatu
+121,BN,Apa
+122,BN,Buruku
+123,BN,Gboko
+124,BN,Guma
+125,BN,Gwer East
+126,BN,Gwer West
+127,BN,Katsina-ala
+128,BN,Konshisha
+129,BN,Kwande
+130,BN,Logo
+131,BN,Makurdi
+132,BN,Obi
+133,BN,Ogbadibo
+134,BN,Oju
+135,BN,Ohimini
+136,BN,Okpokwu
+137,BN,Otukpo
+138,BN,Tarka
+139,BN,Ukum
+140,BN,Ushongo
+141,BN,Vandeikya
+142,BO,Abadam
+143,BO,Askira / Uba
+144,BO,Bama
+145,BO,Bayo
+146,BO,Biu
+147,BO,Chibok
+148,BO,Damboa
+149,BO,Dikwa
+150,BO,Gubio
+151,BO,Guzamala
+152,BO,Gwoza
+153,BO,Hawul
+154,BO,Jere
+155,BO,Kaga
+156,BO,Kala Balge
+157,BO,Konduga
+158,BO,Kukawa
+159,BO,Kwaya / Kusar
+160,BO,Mafa
+161,BO,Magumeri
+162,BO,Maiduguri M. C.
+163,BO,Marte
+164,BO,Mobbar
+165,BO,Monguno
+166,BO,Ngala
+167,BO,Nganzai
+168,BO,Shani
+169,CR,Abi
+170,CR,Akamkpa
+171,CR,Akpabuyo
+172,CR,Bakassi
+173,CR,Bekwarra
+174,CR,Biase
+175,CR,Boki
+176,CR,Calabar Municipality
+177,CR,Calabar South
+178,CR,Etung
+179,CR,Ikom
+180,CR,Obanliku
+181,CR,Obubra
+182,CR,Obudu
+183,CR,Odukpani
+184,CR,Ogoja
+185,CR,Yakurr
+186,CR,Yala
+187,DT,Aniocha North
+188,DT,Aniocha - South
+189,DT,Bomadi
+190,DT,Burutu
+191,DT,Ethiope East
+192,DT,Ethiope West
+193,DT,Ika North- East
+194,DT,Ika - South
+195,DT,Isoko North
+196,DT,Isoko South
+197,DT,Ndokwa East
+198,DT,Ndokwa West
+199,DT,Okpe
+200,DT,Oshimili - North
+201,DT,Oshimili - South
+202,DT,Patani
+203,DT,Sapele
+204,DT,Udu
+205,DT,Ughelli North
+206,DT,Ughelli South
+207,DT,Ukwuani
+208,DT,Uvwie
+209,DT,Warri North
+210,DT,Warri South
+211,DT,Warri South West
+212,EB,Abakaliki
+213,EB,Afikpo North
+214,EB,Afikpo South
+215,EB,Ebonyi
+216,EB,Ezza North
+217,EB,Ezza South
+218,EB,Ikwo
+219,EB,Ishielu
+220,EB,Ivo
+221,EB,Izzi
+222,EB,Ohaozara
+223,EB,Ohaukwu
+224,EB,Onicha
+225,ED,Akoko Edo
+226,ED,Egor
+227,ED,Esan Central
+228,ED,Esan North East
+229,ED,Esan South East
+230,ED,Esan West
+231,ED,Etsako Central
+232,ED,Etsako East
+233,ED,Etsako West
+234,ED,Igueben
+235,ED,Ikpoba/okha
+236,ED,Oredo
+237,ED,Orhionmwon
+238,ED,Ovia North East
+239,ED,Ovia South West
+240,ED,Owan East
+241,ED,Owan West
+242,ED,Uhunmwode
+243,EK,Ado Ekiti
+244,EK,Efon
+245,EK,Ekiti East
+246,EK,Ekiti West
+247,EK,Ekiti South West
+248,EK,Emure
+249,EK,Gbonyin
+250,EK,Ido / Osi
+251,EK,Ijero
+252,EK,Ikere
+253,EK,Ikole
+254,EK,Ilejemeje
+255,EK,Irepodun / Ifelodun
+256,EK,Ise / Orun
+257,EK,Moba
+258,EK,Oye
+259,EN,Aninri
+260,EN,Awgu
+261,EN,Enugu East
+262,EN,Enugu North
+263,EN,Enugu South
+264,EN,Ezeagu
+265,EN,Igbo Etiti
+266,EN,Igbo Eze North
+267,EN,Igbo Eze South
+268,EN,Isi Uzo
+269,EN,Nkanu East
+270,EN,Nkanu West
+271,EN,Nsukka
+272,EN,Oji-river
+273,EN,Udenu
+274,EN,Udi
+275,EN,Uzo-uwani
+276,FC,Abaji
+277,FC,Bwari
+278,FC,Gwagwalada
+279,FC,Kuje
+280,FC,Kwali
+281,FC,Municipal
+282,GM,Akko
+283,GM,Balanga
+284,GM,Billiri
+285,GM,Dukku
+286,GM,Funakaye
+287,GM,Gombe
+288,GM,Kaltungo
+289,GM,Kwami
+290,GM,Nafada
+291,GM,Shongom
+292,GM,Yalmaltu/ Deba
+293,IM,Aboh Mbaise
+294,IM,Ahiazu Mbaise
+295,IM,Ehime Mbano
+296,IM,Ezinihitte Mbaise
+297,IM,Ideato North
+298,IM,Ideato South
+299,IM,Ihitte/uboma (isinweke)
+300,IM,Ikeduru (iho)
+301,IM,Isiala Mbano (umuelemai)
+302,IM,Isu (umundugba)
+303,IM,Mbaitoli (nwaorieubi)
+304,IM,Ngor Okpala (umuneke)
+305,IM,Njaba (nnenasa)
+306,IM,Nkwerre
+307,IM,Nwangele (onu-nwangele Amaigbo)
+308,IM,Obowo (otoko)
+309,IM,Oguta (oguta)
+310,IM,Ohaji/egbema (mmahu-egbema)
+311,IM,Okigwe (okigwe)
+312,IM,Onuimo (okwe)
+313,IM,Orlu
+314,IM,Orsu (awo Idemili)
+315,IM,Oru-east
+316,IM,Oru West (mgbidi)
+317,IM,Owerri Municipal
+318,IM,Owerri North (orie Uratta)
+319,IM,Owerri West (umuguma)
+320,JG,Auyo
+321,JG,Babura
+322,JG,Birnin Kudu
+323,JG,Birniwa
+324,JG,Buji
+325,JG,Dutse
+326,JG,Garki
+327,JG,Gagarawa
+328,JG,Gumel
+329,JG,Guri
+330,JG,Gwaram
+331,JG,Gwiwa
+332,JG,Hadejia
+333,JG,Jahun
+334,JG,Kafin Hausa
+335,JG,Kaugama
+336,JG,Kazaure
+337,JG,Kirika Samma
+338,JG,Kiyawa
+339,JG,Maigatari
+340,JG,Malam Madori
+341,JG,Miga
+342,JG,Ringim
+343,JG,Roni
+344,JG,Sule-tankarkar
+345,JG,Taura
+346,JG,Yankwashi
+347,KD,Birnin Gwari
+348,KD,Chikun
+349,KD,Giwa
+350,KD,Igabi
+351,KD,Ikara
+352,KD,Jaba
+353,KD,JEMA'A
+354,KD,Kachia
+355,KD,Kaduna North
+356,KD,Kaduna South
+357,KD,Kagarko
+358,KD,Kajuru
+359,KD,Kaura
+360,KD,Kauru
+361,KD,Kubau
+362,KD,Kudan
+363,KD,Lere
+364,KD,Makarfi
+365,KD,Sabon Gari
+366,KD,Sanga
+367,KD,Soba
+368,KD,Zangon Kataf
+369,KD,Zaria
+370,KN,Ajingi
+371,KN,Albasu
+372,KN,Bagwai
+373,KN,Bebeji
+374,KN,Bichi
+375,KN,Bunkure
+376,KN,Dala
+377,KN,Danbata
+378,KN,Dawaki Kudu
+379,KN,Dawaki Tofa
+380,KN,Doguwa
+381,KN,Fagge
+382,KN,Gabasawa
+383,KN,Garko
+384,KN,Garun Malam
+385,KN,Gaya
+386,KN,Gezawa
+387,KN,Gwale
+388,KN,Gwarzo
+389,KN,Kabo
+390,KN,Kano Municipal
+391,KN,Karaye
+392,KN,Kibiya
+393,KN,Kiru
+394,KN,Kumbotso
+395,KN,Kunchi
+396,KN,Kura
+397,KN,Madobi
+398,KN,Makoda
+399,KN,Minjibir
+400,KN,Nasarawa
+401,KN,Rano
+402,KN,Rimin Gado
+403,KN,Rogo
+404,KN,Shanono
+405,KN,Sumaila
+406,KN,Takai
+407,KN,Tarauni
+408,KN,Tofa
+409,KN,Tsanyawa
+410,KN,Tudun Wada
+411,KN,Ungogo
+412,KN,Warawa
+413,KN,Wudil
+414,KT,Bakori
+415,KT,Batagarawa
+416,KT,Batsari
+417,KT,Baure
+418,KT,Bindawa
+419,KT,Charanchi
+420,KT,Dandume
+421,KT,Danja
+422,KT,Dan Musa
+423,KT,Daura
+424,KT,Dutsi
+425,KT,Dutsin-ma
+426,KT,Faskari
+427,KT,Funtua
+428,KT,Ingawa
+429,KT,Jibia
+430,KT,Kafur
+431,KT,Kaita
+432,KT,Kankara
+433,KT,Kankia
+434,KT,Katsina
+435,KT,Kurfi
+436,KT,Kusada
+437,KT,MAI'ADUA
+438,KT,Malufashi
+439,KT,Mani
+440,KT,Mashi
+441,KT,Matazu
+442,KT,Musawa
+443,KT,Rimi
+444,KT,Sabuwa
+445,KT,Safana
+446,KT,Sandamu
+447,KT,Zango
+448,KB,Aliero
+449,KB,Arewa
+450,KB,Argungu
+451,KB,Augie
+452,KB,Bagudo
+453,KB,Birnin Kebbi
+454,KB,Bunza
+455,KB,Dandi
+456,KB,Fakai
+457,KB,Gwandu
+458,KB,Jega
+459,KB,Kalgo
+460,KB,Koko/besse
+461,KB,Maiyama
+462,KB,Ngaski
+463,KB,Sakaba
+464,KB,Shanga
+465,KB,Suru
+466,KB,Wasagu/danko
+467,KB,Yauri
+468,KB,Zuru
+469,KG,Adavi
+470,KG,Ajaokuta
+471,KG,Ankpa
+472,KG,Bassa
+473,KG,Dekina
+474,KG,Ibaji
+475,KG,Idah
+476,KG,Igalamela/odolu
+477,KG,Ijumu
+478,KG,Kabba/bunu
+479,KG,Kogi . K. K.
+480,KG,Lokoja
+481,KG,Mopa Moro
+482,KG,Ofu
+483,KG,Ogori Mangogo
+484,KG,Okehi
+485,KG,Okene
+486,KG,Olamaboro
+487,KG,Omala
+488,KG,Yagba East
+489,KG,Yagba West
+490,KW,Asa
+491,KW,Baruten
+492,KW,Edu
+493,KW,Ekiti
+494,KW,Ifelodun
+495,KW,Ilorin East
+496,KW,Ilorin-south
+497,KW,Ilorin-west
+498,KW,Irepodun
+499,KW,Isin
+500,KW,Kaiama
+501,KW,Moro
+502,KW,Offa
+503,KW,Oke - Ero
+504,KW,Oyun
+505,KW,Patigi
+506,LA,Agege
+507,LA,Ajeromi/ifelodun
+508,LA,Alimosho
+509,LA,Amuwo-odofin
+510,LA,Apapa
+511,LA,Badagry
+512,LA,Epe
+513,LA,Eti-osa
+514,LA,Ibeju/lekki
+515,LA,Ifako-ijaye
+516,LA,Ikeja
+517,LA,Ikorodu
+518,LA,Kosofe
+519,LA,Lagos Island
+520,LA,Lagos Mainland
+521,LA,Mushin
+522,LA,Ojo
+523,LA,Oshodi/isolo
+524,LA,Somolu
+525,LA,Surulere
+526,NS,Akwanga
+527,NS,Awe
+528,NS,Doma
+529,NS,Karu
+530,NS,Keana
+531,NS,Keffi
+532,NS,Kokona
+533,NS,Lafia
+534,NS,Nasarawa
+535,NS,Nasarawa Eggon
+536,NS,Obi
+537,NS,Toto
+538,NS,Wamba
+539,NG,Agaie
+540,NG,Agwara
+541,NG,Bida
+542,NG,Borgu
+543,NG,Bosso
+544,NG,Chanchaga
+545,NG,Edatti
+546,NG,Gbako
+547,NG,Gurara
+548,NG,Katcha
+549,NG,Kontagora
+550,NG,Lapai
+551,NG,Lavun
+552,NG,Magama
+553,NG,Mariga
+554,NG,Mashegu
+555,NG,Mokwa
+556,NG,Munya
+557,NG,Paikoro
+558,NG,Rafi
+559,NG,Rijau
+560,NG,Shiroro
+561,NG,Suleja
+562,NG,Tafa
+563,NG,Wushishi
+564,OG,Abeokuta North
+565,OG,Abeokuta South
+566,OG,Ado Odo-ota
+567,OG,Egbado North
+568,OG,Egbado South
+569,OG,Ewekoro
+570,OG,Ifo
+571,OG,Ijebu East
+572,OG,Ijebu North
+573,OG,Ijebu North East
+574,OG,Ijebu Ode
+575,OG,Ikenne
+576,OG,Imeko/afon
+577,OG,Ipokia
+578,OG,Obafemi/owode
+579,OG,Odeda
+580,OG,Odogbolu
+581,OG,Ogun Water Side
+582,OG,Remo North
+583,OG,Sagamu
+584,OD,Akoko North East
+585,OD,Akoko North West
+586,OD,Akoko South East
+587,OD,Akoko South West
+588,OD,Akure North
+589,OD,Akure South
+590,OD,Ese-odo
+591,OD,Idanre
+592,OD,Ifedore
+593,OD,Ilaje
+594,OD,Ileoluji/okeigbo
+595,OD,Irele
+596,OD,Odigbo
+597,OD,Okitipupa
+598,OD,Ondo East
+599,OD,Ondo West
+600,OD,Ose
+601,OD,Owo
+602,OS,Atakumosa East
+603,OS,Atakumosa West
+604,OS,Ayedaade
+605,OS,Ayedire
+606,OS,Boluwaduro
+607,OS,Boripe
+608,OS,Ede North
+609,OS,Ede South
+610,OS,Egbedore
+611,OS,Ejigbo
+612,OS,Ife Central
+613,OS,Ifedayo
+614,OS,Ife East
+615,OS,Ifelodun
+616,OS,Ife North
+617,OS,Ife South
+618,OS,Ila
+619,OS,Ilesa East
+620,OS,Ilesa West
+621,OS,Irepodun
+622,OS,Irewole
+623,OS,Isokan
+624,OS,Iwo
+625,OS,Obokun
+626,OS,Odo-otin
+627,OS,Ola-oluwa
+628,OS,Olorunda
+629,OS,Oriade
+630,OS,Orolu
+631,OS,Osogbo
+632,OY,Afijio
+633,OY,Akinyele
+634,OY,Atiba
+635,OY,Atisbo
+636,OY,Egbeda
+637,OY,Ibadan North
+638,OY,Ibadan North East
+639,OY,Ibadan North West
+640,OY,Ibadan South-east
+641,OY,Ibadan South West
+642,OY,Ibarapa Central
+643,OY,Ibarapa East
+644,OY,Ibarapa North
+645,OY,Ido
+646,OY,Irepo
+647,OY,Iseyin
+648,OY,Itesiwaju
+649,OY,Iwajowa
+650,OY,Kajola
+651,OY,Lagelu
+652,OY,Ogbomoso North
+653,OY,Ogbomoso South
+654,OY,Ogo-oluwa
+655,OY,Olorunsogo
+656,OY,Oluyole
+657,OY,Ona-ara
+658,OY,Oorelope
+659,OY,Ori Ire
+660,OY,Oyo East
+661,OY,Oyo West
+662,OY,Saki East
+663,OY,Saki West
+664,OY,Surulere
+665,PL,Jos North
+666,PL,Barikin Ladi
+667,PL,Bassa
+668,PL,Bokkos
+669,PL,Jos East
+670,PL,Jos South
+671,PL,Kanam
+672,PL,Kanke
+673,PL,Langtang North
+674,PL,Langtang South
+675,PL,Mangu
+676,PL,Mikang
+677,PL,Pankshin
+678,PL,QUA'AN PAN
+679,PL,Riyom
+680,PL,Shendam
+681,PL,Wase
+682,RV,Abua-odual
+683,RV,Ahoada East
+684,RV,Ahoada West
+685,RV,Akuku Toru
+686,RV,Andoni
+687,RV,Asari-toru
+688,RV,Bonny
+689,RV,Degema
+690,RV,Eleme
+691,RV,Emohua
+692,RV,Etche
+693,RV,Gokana
+694,RV,Ikwerre
+695,RV,Khana
+696,RV,Obio/akpor
+697,RV,Ogba/egbema/ndoni
+698,RV,Ogu/bolo
+699,RV,Okrika
+700,RV,Omuma
+701,RV,Opobo/nekoro
+702,RV,Oyigbo
+703,RV,Port Harcourt
+704,RV,Tai
+705,SO,Binji
+706,SO,Bodinga
+707,SO,Dange/shuni
+708,SO,Gada
+709,SO,Goronyo
+710,SO,Gudu
+711,SO,Gwadabawa
+712,SO,Illela
+713,SO,Isa
+714,SO,Kware
+715,SO,Kebbe
+716,SO,Rabah
+717,SO,S/birni
+718,SO,Shagari
+719,SO,Silame
+720,SO,Sokoto North
+721,SO,Sokoto South
+722,SO,Tambuwal
+723,SO,Tangaza
+724,SO,Tureta
+725,SO,Wamakko
+726,SO,Wurno
+727,SO,Yabo
+728,TR,Ardo - Kola
+729,TR,Bali
+730,TR,Donga
+731,TR,Gashaka
+732,TR,Gassol
+733,TR,Ibi
+734,TR,Jalingo
+735,TR,Karim-lamido
+736,TR,Kurmi
+737,TR,Lau
+738,TR,Sardauna
+739,TR,Takum
+740,TR,Ussa
+741,TR,Wukari
+742,TR,Yorro
+743,TR,Zing
+744,YB,Bade
+745,YB,Bursari
+746,YB,Damaturu
+747,YB,Fika
+748,YB,Fune
+749,YB,Geidam
+750,YB,Gujba
+751,YB,Gulani
+752,YB,Jakusko
+753,YB,Karasawa
+754,YB,Machina
+755,YB,Nangere
+756,YB,Nguru
+757,YB,Potiskum
+758,YB,Tarmuwa
+759,YB,Yunusari
+760,YB,Yusufari
+761,ZM,Anka
+762,ZM,Bakura
+763,ZM,Birnin Magaji
+764,ZM,Bukkuyum
+765,ZM,Bungudu
+766,ZM,Gummi
+767,ZM,Gusau
+768,ZM,Kaura Namoda
+769,ZM,Maradun
+770,ZM,Maru
+771,ZM,Shinkafi
+772,ZM,Talata Mafara
+773,ZM,Tsafe
+774,ZM,Zurmi
